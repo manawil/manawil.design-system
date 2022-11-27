@@ -99,6 +99,21 @@ var spacing = {
   20: "5rem",
   40: "7rem"
 };
+
+// src/z-indices.ts
+var zIndices = {
+  overlay: 9995,
+  modal: 9999
+};
+
+// src/opacity.ts
+var opacity = {
+  default: "100%",
+  intense: "90%",
+  md: "50%",
+  light: "25%",
+  transparent: "0%"
+};
 export {
   borderRadius,
   borderWidths,
@@ -107,5 +122,7 @@ export {
   fontSizes,
   fontWeights,
   lineHeights,
-  spacing
+  opacity,
+  spacing,
+  zIndices
 };

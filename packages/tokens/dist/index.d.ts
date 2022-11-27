@@ -1,38 +1,38 @@
 declare const colors: {
-    readonly "primary-50": "#DEECFF";
-    readonly "primary-100": "#BAD6FF";
-    readonly "primary-200": "#82B5FF";
-    readonly "primary-300": "#549AFF";
-    readonly "primary-400": "#217CFF";
-    readonly "primary-500": "#005CE1";
-    readonly "primary-600": "#004BB7";
-    readonly "primary-700": "#003C93";
-    readonly "primary-800": "#002F72";
-    readonly "primary-900": "#00204E";
-    readonly "secondary-50": "#FFF2C0";
-    readonly "secondary-100": "#FFE78C";
-    readonly "secondary-200": "#FFDE66";
-    readonly "secondary-300": "#FFD94A";
-    readonly "secondary-400": "#FFD229";
-    readonly "secondary-500": "#FBC80B";
-    readonly "secondary-600": "#E5B400";
-    readonly "secondary-700": "#C59A00";
-    readonly "secondary-800": "#A38000";
-    readonly "secondary-900": "#7A6000";
-    readonly "gray-50": "#F4F4F4";
-    readonly "gray-100": "#EAEAEA";
-    readonly "gray-200": "#DDDDDD";
-    readonly "gray-300": "#BCBCBC";
-    readonly "gray-400": "#969696";
-    readonly "gray-500": "#787878";
-    readonly "gray-600": "#606060";
-    readonly "gray-700": "#484848";
-    readonly "gray-800": "#323232";
-    readonly "gray-900": "#222222";
-    readonly "success-light": "#04D361";
-    readonly "success-dark": "#1B873F";
-    readonly "danger-light": "#F75A68";
-    readonly "danger-dark": "#CC2937";
+    readonly 'primary-50': "#DEECFF";
+    readonly 'primary-100': "#BAD6FF";
+    readonly 'primary-200': "#82B5FF";
+    readonly 'primary-300': "#549AFF";
+    readonly 'primary-400': "#217CFF";
+    readonly 'primary-500': "#005CE1";
+    readonly 'primary-600': "#004BB7";
+    readonly 'primary-700': "#003C93";
+    readonly 'primary-800': "#002F72";
+    readonly 'primary-900': "#00204E";
+    readonly 'secondary-50': "#FFF2C0";
+    readonly 'secondary-100': "#FFE78C";
+    readonly 'secondary-200': "#FFDE66";
+    readonly 'secondary-300': "#FFD94A";
+    readonly 'secondary-400': "#FFD229";
+    readonly 'secondary-500': "#FBC80B";
+    readonly 'secondary-600': "#E5B400";
+    readonly 'secondary-700': "#C59A00";
+    readonly 'secondary-800': "#A38000";
+    readonly 'secondary-900': "#7A6000";
+    readonly 'gray-50': "#F4F4F4";
+    readonly 'gray-100': "#EAEAEA";
+    readonly 'gray-200': "#DDDDDD";
+    readonly 'gray-300': "#BCBCBC";
+    readonly 'gray-400': "#969696";
+    readonly 'gray-500': "#787878";
+    readonly 'gray-600': "#606060";
+    readonly 'gray-700': "#484848";
+    readonly 'gray-800': "#323232";
+    readonly 'gray-900': "#222222";
+    readonly 'success-light': "#04D361";
+    readonly 'success-dark': "#1B873F";
+    readonly 'danger-light': "#F75A68";
+    readonly 'danger-dark': "#CC2937";
 };
 
 declare const fontFamilies: {
@@ -64,10 +64,10 @@ declare const lineHeights: {
 };
 
 declare const borderRadius: {
-    readonly "rounded-xs": "4px";
-    readonly "rounded-sm": "8px";
-    readonly "rounded-md": "16px";
-    readonly "rounded-full": "999px";
+    readonly 'rounded-xs': "4px";
+    readonly 'rounded-sm': "8px";
+    readonly 'rounded-md': "16px";
+    readonly 'rounded-full': "999px";
 };
 
 declare const borderWidths: {
@@ -92,4 +92,17 @@ declare const spacing: {
     readonly 40: "7rem";
 };
 
-export { borderRadius, borderWidths, colors, fontFamilies, fontSizes, fontWeights, lineHeights, spacing };
+declare const zIndices: {
+    readonly overlay: 9995;
+    readonly modal: 9999;
+};
+
+declare const opacity: {
+    readonly default: "100%";
+    readonly intense: "90%";
+    readonly md: "50%";
+    readonly light: "25%";
+    readonly transparent: "0%";
+};
+
+export { borderRadius, borderWidths, colors, fontFamilies, fontSizes, fontWeights, lineHeights, opacity, spacing, zIndices };

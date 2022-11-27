@@ -36,5 +36,11 @@ var colors = {
   "danger-dark": "#CC2937"
 };
 
-// src/index.ts
-console.log(colors);
+// src/index.tsx
+import { jsx } from "react/jsx-runtime";
+function App() {
+  return /* @__PURE__ */ jsx("h1", { style: { color: colors["gray-500"] }, children: "Hello world" });
+}
+export {
+  App
+};

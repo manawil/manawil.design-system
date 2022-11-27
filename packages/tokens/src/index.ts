@@ -9,3 +9,5 @@ export * from './border-radius'
 export * from './border-widths'
 
 export * from './spacing'
+
+export * from './z-indices'

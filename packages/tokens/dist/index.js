@@ -27,7 +27,9 @@ __export(src_exports, {
   fontSizes: () => fontSizes,
   fontWeights: () => fontWeights,
   lineHeights: () => lineHeights,
-  spacing: () => spacing
+  opacity: () => opacity,
+  spacing: () => spacing,
+  zIndices: () => zIndices
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -132,6 +134,21 @@ var spacing = {
   20: "5rem",
   40: "7rem"
 };
+
+// src/z-indices.ts
+var zIndices = {
+  overlay: 9995,
+  modal: 9999
+};
+
+// src/opacity.ts
+var opacity = {
+  default: "100%",
+  intense: "90%",
+  md: "50%",
+  light: "25%",
+  transparent: "0%"
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   borderRadius,
@@ -141,5 +158,7 @@ var spacing = {
   fontSizes,
   fontWeights,
   lineHeights,
-  spacing
+  opacity,
+  spacing,
+  zIndices
 });
