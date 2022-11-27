@@ -97,12 +97,4 @@ declare const zIndices: {
     readonly modal: 9999;
 };
 
-declare const opacity: {
-    readonly default: "100%";
-    readonly intense: "90%";
-    readonly md: "50%";
-    readonly light: "25%";
-    readonly transparent: "0%";
-};
-
-export { borderRadius, borderWidths, colors, fontFamilies, fontSizes, fontWeights, lineHeights, opacity, spacing, zIndices };
+export { borderRadius, borderWidths, colors, fontFamilies, fontSizes, fontWeights, lineHeights, spacing, zIndices };
