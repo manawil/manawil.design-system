@@ -36,4 +36,5 @@ export const colors = {
   "success-dark": "#1B873F",
   "danger-light": "#F75A68",
   "danger-dark": "#CC2937",
-};
+} as const;
+
