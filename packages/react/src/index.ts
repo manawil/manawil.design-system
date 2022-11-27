@@ -1,3 +1,3 @@
-import { colors } from "@manawil-ui/tokens";
+import { colors } from '@manawil-ui/tokens'
 
-console.log(colors);
+console.log(colors)

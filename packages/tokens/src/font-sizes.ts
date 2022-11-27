@@ -7,4 +7,4 @@ export const fontSizes = {
   '2xl': '2rem', // 32px
   '3xl': '3rem', // 48px
   '4xl': '4rem', // 64px
-} as const;
+} as const

@@ -1,5 +1,5 @@
 export const borderWidths = {
-  thin: "1px",
-  mid: "2px",
-  thick: "4px",
-} as const;
+  thin: '1px',
+  mid: '2px',
+  thick: '4px',
+} as const
