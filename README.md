@@ -1,1 +1,1 @@
-# manawil.design-system
+# Manawil Design System
