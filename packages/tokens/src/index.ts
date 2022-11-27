@@ -6,3 +6,4 @@ export * from "./font-sizes";
 export * from "./line-heights";
 
 export * from "./border-radius";
+export * from "./border-widths";
