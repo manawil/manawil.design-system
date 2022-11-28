@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Checkbox, CheckboxProps } from '@manawil-ui/react'
+import { Box, Checkbox, CheckboxProps } from '@manawil-ui/react'
 
 export default {
   title: 'Form/Checkbox',
@@ -8,17 +8,18 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <div
-          style={{
-            width: '100%',
-            minHeight: '90vh',
+        <Box
+          css={{
+            width: '95%',
+            minHeight: '85vh',
+            overflow: 'hidden',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
           }}
         >
           {Story()}
-        </div>
+        </Box>
       )
     },
   ],

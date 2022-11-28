@@ -21,6 +21,18 @@ var __spreadValues = (a, b) => {
   return a;
 };
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+var __objRest = (source, exclude) => {
+  var target = {};
+  for (var prop in source)
+    if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+      target[prop] = source[prop];
+  if (source != null && __getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(source)) {
+      if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop))
+        target[prop] = source[prop];
+    }
+  return target;
+};
 var __commonJS = (cb, mod) => function __require() {
   return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
 };
@@ -3024,10 +3036,10 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx2 = jsxWithValidationDynamic;
+        var jsx3 = jsxWithValidationDynamic;
         var jsxs = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx2;
+        exports.jsx = jsx3;
         exports.jsxs = jsxs;
       })();
     }
@@ -3290,7 +3302,65 @@ var CheckboxIndicator = styled(RadixCheckbox.Indicator, {
 function Checkbox(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CheckboxContainer, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CheckboxIndicator, { asChild: true, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, { weight: "bold" }) }) }));
 }
+
+// src/components/layout/box.tsx
+var Box = styled("div", {
+  padding: "$4"
+});
+Box.displayName = "Box";
+
+// src/components/data-display/avatar.tsx
+import * as RadixAvatar from "@radix-ui/react-avatar";
+var import_jsx_runtime2 = __toESM(require_jsx_runtime());
+var AvatarContainer = styled(RadixAvatar.Root, {
+  borderRadius: "$rounded-full",
+  display: "inline-block",
+  overflow: "hidden",
+  fontFamily: "$default",
+  fontWeight: "$medium",
+  userSelect: "none",
+  variants: {
+    size: {
+      sm: {
+        width: spacing[8],
+        height: spacing[8],
+        fontSize: "$xs"
+      },
+      md: {
+        width: spacing[16],
+        height: spacing[16],
+        fontSize: "$xl"
+      },
+      xl: {
+        width: spacing[40],
+        height: spacing[40],
+        fontSize: "$3xl"
+      }
+    }
+  }
+});
+var AvatarFallback = styled(RadixAvatar.Fallback, {
+  width: "100%",
+  height: "100%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  backgroundColor: "$gray-200",
+  color: "$gray-800",
+  svg: {
+    width: spacing[6],
+    height: spacing[6]
+  }
+});
+function Avatar(_a) {
+  var _b = _a, { fallback, size = "md" } = _b, rest = __objRest(_b, ["fallback", "size"]);
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(AvatarContainer, __spreadProps(__spreadValues({ size }, rest), { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(AvatarFallback, { children: fallback }) }));
+}
 export {
+  Avatar,
+  AvatarContainer,
+  AvatarFallback,
+  Box,
   Button,
   Checkbox,
   CheckboxContainer,
