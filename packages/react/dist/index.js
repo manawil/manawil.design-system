@@ -1,8 +1,25 @@
 "use strict";
 var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
 var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
@@ -20,7 +37,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.tsx
 var src_exports = {};
 __export(src_exports, {
-  App: () => App
+  Button: () => Button
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -61,13 +78,169 @@ var colors = {
   "danger-light": "#F75A68",
   "danger-dark": "#CC2937"
 };
+var fontFamilies = {
+  default: "DM Sans, sans-serif"
+};
+var fontWeights = {
+  regular: 400,
+  medium: 500,
+  bold: 700
+};
+var fontSizes = {
+  xs: "0.75rem",
+  sm: "0.875rem",
+  md: "1rem",
+  lg: "1.25rem",
+  xl: "1.5rem",
+  "2xl": "2rem",
+  "3xl": "3rem",
+  "4xl": "4rem"
+};
+var lineHeights = {
+  shorter: "120%",
+  short: "140%",
+  tall: "160%",
+  taller: "180%"
+};
+var borderRadius = {
+  "rounded-xs": "4px",
+  "rounded-sm": "8px",
+  "rounded-md": "16px",
+  "rounded-full": "999px"
+};
+var borderWidths = {
+  thin: "1px",
+  mid: "2px",
+  thick: "4px"
+};
+var spacing = {
+  0: "0",
+  1: "0.25rem",
+  2: "0.5rem",
+  3: "0.75rem",
+  4: "1rem",
+  5: "1.25rem",
+  6: "1.5rem",
+  8: "2rem",
+  10: "2.5rem",
+  12: "3rem",
+  16: "4rem",
+  20: "5rem",
+  40: "7rem"
+};
+var zIndices = {
+  overlay: 9995,
+  modal: 9999
+};
 
-// src/index.tsx
-var import_jsx_runtime = require("react/jsx-runtime");
-function App() {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { style: { color: colors["gray-500"] }, children: "Hello world" });
-}
+// src/styles/index.ts
+var import_react = require("@stitches/react");
+var {
+  styled,
+  css,
+  globalCss,
+  keyframes,
+  getCssText,
+  theme,
+  createTheme,
+  config
+} = (0, import_react.createStitches)({
+  themeMap: __spreadProps(__spreadValues({}, import_react.defaultThemeMap), {
+    width: "spacing",
+    height: "spacing"
+  }),
+  theme: {
+    colors,
+    fontSizes,
+    fontWeights,
+    lineHeights,
+    borderWidths,
+    fonts: fontFamilies,
+    radii: borderRadius,
+    space: spacing,
+    zIndices
+  },
+  media: {
+    web: "(max-width: 1280px)",
+    medium: "(max-width: 992px)",
+    mobile: "(max-width: 768px)"
+  }
+});
+
+// src/components/form/button.tsx
+var Button = styled("button", {
+  all: "unset",
+  borderRadius: "$rounded-xs",
+  fontSize: "$sm",
+  fontWeight: "$bold",
+  fontFamily: "$default",
+  textAlign: "center",
+  minWidth: 96,
+  height: 38,
+  boxSizing: "border-box",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "$2",
+  cursor: "pointer",
+  padding: "0 $4",
+  textTransform: "uppercase",
+  transition: "all 0.2s",
+  svg: {
+    width: "$4",
+    height: "$4"
+  },
+  "&:disabled": {
+    opacity: 0.6,
+    cursor: "auto"
+  },
+  variants: {
+    variant: {
+      primary: {
+        color: "$gray-50",
+        backgroundColor: "$primary-300",
+        "&:not(:disabled):hover": {
+          backgroundColor: "$primary-400"
+        }
+      },
+      secondary: {
+        color: "$gray-50",
+        backgroundColor: "$secondary-500",
+        "&:not(:disabled):hover": {
+          backgroundColor: "$secondary-600"
+        }
+      },
+      outline: {
+        color: "$primary-300",
+        borderWidth: "$thin",
+        borderStyle: "solid",
+        borderColor: "$primary-300",
+        "&:not(:disabled):hover": {
+          color: "$gray-50",
+          backgroundColor: "$primary-300"
+        }
+      },
+      danger: {
+        color: "$gray-50",
+        backgroundColor: "$danger-light",
+        "&:not(:disabled):hover": {
+          backgroundColor: "$danger-dark"
+        }
+      },
+      ghost: {
+        color: "$primary-300",
+        backgroundColor: "transparent",
+        "&:not(:disabled):hover": {
+          backgroundColor: "$gray-100"
+        }
+      }
+    }
+  },
+  defaultVariants: {
+    variant: "primary"
+  }
+});
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  App
+  Button
 });
