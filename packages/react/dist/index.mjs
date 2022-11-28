@@ -3036,11 +3036,11 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx3 = jsxWithValidationDynamic;
-        var jsxs = jsxWithValidationStatic;
+        var jsx4 = jsxWithValidationDynamic;
+        var jsxs2 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx3;
-        exports.jsxs = jsxs;
+        exports.jsx = jsx4;
+        exports.jsxs = jsxs2;
       })();
     }
   }
@@ -3303,6 +3303,69 @@ function Checkbox(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CheckboxContainer, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CheckboxIndicator, { asChild: true, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, { weight: "bold" }) }) }));
 }
 
+// src/components/form/radio-button.tsx
+import * as RadioGroup from "@radix-ui/react-radio-group";
+var import_jsx_runtime2 = __toESM(require_jsx_runtime());
+var RadioButtonContainer = styled(RadioGroup.Root, {
+  all: "unset",
+  display: "flex",
+  alignItems: "center",
+  gap: "$2",
+  fontFamily: "$default",
+  color: "$gray-800"
+});
+var RadioButtonItem = styled(RadioGroup.Item, {
+  backgroundColor: "$gray-100",
+  width: spacing[5],
+  height: spacing[5],
+  borderRadius: "$rounded-full",
+  outline: 0,
+  borderWidth: "$thin",
+  borderStyle: "solid",
+  borderColor: "$gray-100",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  '&[data-state="checked"]': {
+    "&:focus": {
+      borderWidth: "$mid",
+      borderStyle: "solid",
+      borderColor: "$primary-100"
+    }
+  },
+  "&:focus": {
+    borderWidth: "$mid",
+    borderStyle: "solid",
+    borderColor: "$primary-300"
+  },
+  "&:disabled": {
+    cursor: "not-allowed"
+  }
+});
+var RadioButtonIndicator = styled(RadioGroup.Indicator, {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  width: spacing[4],
+  height: spacing[4],
+  position: "relative",
+  "&::after": {
+    content: "",
+    display: "block",
+    width: spacing[3],
+    height: spacing[3],
+    borderRadius: "50%",
+    backgroundColor: "$primary-300"
+  }
+});
+function RadioButton(_a) {
+  var _b = _a, { label, id, value } = _b, rest = __objRest(_b, ["label", "id", "value"]);
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(RadioButtonContainer, __spreadProps(__spreadValues({}, rest), { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(RadioButtonItem, { id, value, children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(RadioButtonIndicator, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("label", { htmlFor: id, children: label })
+  ] }));
+}
+
 // src/components/layout/box.tsx
 var Box = styled("div", {
   padding: "$4"
@@ -3311,7 +3374,7 @@ Box.displayName = "Box";
 
 // src/components/data-display/avatar.tsx
 import * as RadixAvatar from "@radix-ui/react-avatar";
-var import_jsx_runtime2 = __toESM(require_jsx_runtime());
+var import_jsx_runtime3 = __toESM(require_jsx_runtime());
 var AvatarContainer = styled(RadixAvatar.Root, {
   borderRadius: "$rounded-full",
   display: "inline-block",
@@ -3354,7 +3417,7 @@ var AvatarFallback = styled(RadixAvatar.Fallback, {
 });
 function Avatar(_a) {
   var _b = _a, { fallback, size = "md" } = _b, rest = __objRest(_b, ["fallback", "size"]);
-  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(AvatarContainer, __spreadProps(__spreadValues({ size }, rest), { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(AvatarFallback, { children: fallback }) }));
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(AvatarContainer, __spreadProps(__spreadValues({ size }, rest), { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(AvatarFallback, { children: fallback }) }));
 }
 export {
   Avatar,
@@ -3364,7 +3427,11 @@ export {
   Button,
   Checkbox,
   CheckboxContainer,
-  CheckboxIndicator
+  CheckboxIndicator,
+  RadioButton,
+  RadioButtonContainer,
+  RadioButtonIndicator,
+  RadioButtonItem
 };
 /**
  * @license React
