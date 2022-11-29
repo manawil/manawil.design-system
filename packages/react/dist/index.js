@@ -3042,10 +3042,10 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx6 = jsxWithValidationDynamic;
+        var jsx7 = jsxWithValidationDynamic;
         var jsxs3 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx6;
+        exports.jsx = jsx7;
         exports.jsxs = jsxs3;
       })();
     }
@@ -3084,6 +3084,7 @@ __export(src_exports, {
   RadioButtonContainer: () => RadioButtonContainer,
   RadioButtonIndicator: () => RadioButtonIndicator,
   RadioButtonItem: () => RadioButtonItem,
+  Skeleton: () => Skeleton,
   TextField: () => TextField
 });
 module.exports = __toCommonJS(src_exports);
@@ -3547,6 +3548,41 @@ function Avatar(_a) {
   var _b = _a, { fallback, size = "md" } = _b, rest = __objRest(_b, ["fallback", "size"]);
   return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(AvatarContainer, __spreadProps(__spreadValues({ size }, rest), { children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(AvatarFallback, { children: fallback }) }));
 }
+
+// src/components/feedback/skeleton.tsx
+var import_jsx_runtime6 = __toESM(require_jsx_runtime());
+var loading = keyframes({
+  "100%": {
+    transform: "translateX(100%)"
+  }
+});
+var SkeletonLoading = styled("div", {
+  position: "relative",
+  overflow: "hidden",
+  boxSizing: "border-box",
+  zIndex: 1,
+  borderRadius: "$rounded-xs",
+  backgroundColor: "$gray-100",
+  "&::after": {
+    content: "",
+    position: "absolute",
+    inset: 0,
+    transform: "translateX(-100%)",
+    backgroundImage: "linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.1) 20%, rgba(196, 196, 196, 0.5) 60%, rgba(255, 255, 255, 0))",
+    animation: `${loading} 3s infinite`
+  }
+});
+function Skeleton({ width, height, radius, count }) {
+  if (count)
+    return [...Array(count)].map((_, index) => /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+      SkeletonLoading,
+      {
+        style: { width, height, borderRadius: radius }
+      },
+      index
+    ));
+  return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(SkeletonLoading, { style: { width, height, borderRadius: radius } });
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
@@ -3566,6 +3602,7 @@ function Avatar(_a) {
   RadioButtonContainer,
   RadioButtonIndicator,
   RadioButtonItem,
+  Skeleton,
   TextField
 });
 /**
