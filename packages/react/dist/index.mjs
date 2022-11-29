@@ -3036,11 +3036,11 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx4 = jsxWithValidationDynamic;
-        var jsxs2 = jsxWithValidationStatic;
+        var jsx5 = jsxWithValidationDynamic;
+        var jsxs3 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx4;
-        exports.jsxs = jsxs2;
+        exports.jsx = jsx5;
+        exports.jsxs = jsxs3;
       })();
     }
   }
@@ -3366,6 +3366,85 @@ function RadioButton(_a) {
   ] }));
 }
 
+// src/components/form/text-field.tsx
+var import_jsx_runtime3 = __toESM(require_jsx_runtime());
+var InputContainer = styled("div", {
+  minWidth: "300px"
+});
+var InputContent = styled("div", {
+  position: "relative",
+  display: "flex",
+  width: "100%",
+  transition: "opacity 0.2s",
+  div: {
+    position: "absolute",
+    top: 0,
+    right: "-4px",
+    display: "flex",
+    alignItems: "center",
+    width: spacing[12],
+    height: "100%",
+    transition: "color 0.2s",
+    cursor: "pointer"
+  }
+});
+var Input = styled("input", {
+  boxSizing: "border-box",
+  appearance: "none",
+  outline: 0,
+  width: "100%",
+  height: spacing[12],
+  padding: "0 $4",
+  fontFamily: "$default",
+  fontSize: "$md",
+  color: "$gray-700",
+  backgroundColor: "$gray-100",
+  borderWidth: "$mid",
+  borderStyle: "solid",
+  borderColor: "$gray-100",
+  borderRadius: "$rounded-xs",
+  transition: "border-color 0.2s",
+  "&:focus": {
+    borderWidth: "$mid",
+    borderStyle: "solid",
+    borderColor: "$primary-300"
+  },
+  "&:disabled": {
+    opacity: "0.5",
+    cursor: "auto"
+  },
+  variants: {
+    hasIcon: {
+      true: {
+        paddingRight: "$16"
+      }
+    },
+    hasError: {
+      true: {
+        borderWidth: "$mid",
+        borderStyle: "solid",
+        borderColor: "$danger-light"
+      }
+    }
+  }
+});
+function TextField(_a) {
+  var _b = _a, {
+    icon,
+    onIconClick,
+    error
+  } = _b, rest = __objRest(_b, [
+    "icon",
+    "onIconClick",
+    "error"
+  ]);
+  console.log(error);
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(InputContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(InputContent, { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(Input, __spreadValues({ hasIcon: Boolean(icon), hasError: Boolean(error) }, rest)),
+    /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { role: onIconClick ? "button" : "", children: icon })
+  ] }) });
+}
+
 // src/components/layout/box.tsx
 var Box = styled("div", {
   padding: "$4"
@@ -3374,7 +3453,7 @@ Box.displayName = "Box";
 
 // src/components/data-display/avatar.tsx
 import * as RadixAvatar from "@radix-ui/react-avatar";
-var import_jsx_runtime3 = __toESM(require_jsx_runtime());
+var import_jsx_runtime4 = __toESM(require_jsx_runtime());
 var AvatarContainer = styled(RadixAvatar.Root, {
   borderRadius: "$rounded-full",
   display: "inline-block",
@@ -3417,7 +3496,7 @@ var AvatarFallback = styled(RadixAvatar.Fallback, {
 });
 function Avatar(_a) {
   var _b = _a, { fallback, size = "md" } = _b, rest = __objRest(_b, ["fallback", "size"]);
-  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(AvatarContainer, __spreadProps(__spreadValues({ size }, rest), { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(AvatarFallback, { children: fallback }) }));
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(AvatarContainer, __spreadProps(__spreadValues({ size }, rest), { children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(AvatarFallback, { children: fallback }) }));
 }
 export {
   Avatar,
@@ -3428,10 +3507,14 @@ export {
   Checkbox,
   CheckboxContainer,
   CheckboxIndicator,
+  Input,
+  InputContainer,
+  InputContent,
   RadioButton,
   RadioButtonContainer,
   RadioButtonIndicator,
-  RadioButtonItem
+  RadioButtonItem,
+  TextField
 };
 /**
  * @license React
