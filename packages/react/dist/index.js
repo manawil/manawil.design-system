@@ -3042,11 +3042,11 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx7 = jsxWithValidationDynamic;
-        var jsxs3 = jsxWithValidationStatic;
+        var jsx8 = jsxWithValidationDynamic;
+        var jsxs4 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx7;
-        exports.jsxs = jsxs3;
+        exports.jsx = jsx8;
+        exports.jsxs = jsxs4;
       })();
     }
   }
@@ -3071,6 +3071,8 @@ __export(src_exports, {
   AvatarContainer: () => AvatarContainer,
   AvatarFallback: () => AvatarFallback,
   Box: () => Box,
+  Breadcrumb: () => Breadcrumb,
+  BreadcrumbItem: () => BreadcrumbItem,
   Button: () => Button,
   Checkbox: () => Checkbox,
   CheckboxContainer: () => CheckboxContainer,
@@ -3085,6 +3087,8 @@ __export(src_exports, {
   RadioButtonIndicator: () => RadioButtonIndicator,
   RadioButtonItem: () => RadioButtonItem,
   Skeleton: () => Skeleton,
+  StyledBreadcrumb: () => StyledBreadcrumb,
+  StyledBreadcrumbItem: () => StyledBreadcrumbItem,
   TextField: () => TextField
 });
 module.exports = __toCommonJS(src_exports);
@@ -3583,12 +3587,77 @@ function Skeleton({ width, height, radius, count }) {
     ));
   return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(SkeletonLoading, { style: { width, height, borderRadius: radius } });
 }
+
+// src/components/navigation/breadcrumb.tsx
+var import_phosphor_react2 = require("phosphor-react");
+var import_jsx_runtime7 = __toESM(require_jsx_runtime());
+var StyledBreadcrumb = styled("nav", {
+  display: "flex",
+  alignItems: "center",
+  ol: {
+    display: "flex",
+    margin: 0,
+    padding: 0
+  }
+});
+var StyledBreadcrumbItem = styled("li", {
+  display: "flex",
+  alignItems: "center",
+  a: {
+    fontWeight: "$regular",
+    fontFamily: "$default",
+    fontSize: "$sm",
+    lineHeight: "$short",
+    textDecoration: "none",
+    color: "$gray-300",
+    cursor: "pointer",
+    padding: "$2",
+    borderRadius: "$rounded-xs",
+    transition: "background-color 0.2s"
+  },
+  "a:hover": {
+    backgroundColor: "$gray-100"
+  },
+  "span svg": {
+    display: "flex",
+    color: "$gray-300",
+    margin: "0 $1"
+  },
+  "&:last-child svg": {
+    display: "none"
+  },
+  variants: {
+    isActivePage: {
+      true: {
+        a: {
+          color: "$gray-800",
+          fontWeight: "$medium"
+        }
+      }
+    }
+  }
+});
+function BreadcrumbItem({
+  children,
+  isActivePage,
+  to
+}) {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)(StyledBreadcrumbItem, { isActivePage, children: [
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("a", { href: to, children }),
+    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("span", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(import_phosphor_react2.CaretRight, { size: 16 }) })
+  ] });
+}
+function Breadcrumb(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(StyledBreadcrumb, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ol", { children: props.children }) }));
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
   AvatarContainer,
   AvatarFallback,
   Box,
+  Breadcrumb,
+  BreadcrumbItem,
   Button,
   Checkbox,
   CheckboxContainer,
@@ -3603,6 +3672,8 @@ function Skeleton({ width, height, radius, count }) {
   RadioButtonIndicator,
   RadioButtonItem,
   Skeleton,
+  StyledBreadcrumb,
+  StyledBreadcrumbItem,
   TextField
 });
 /**
