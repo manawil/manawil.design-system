@@ -3036,10 +3036,10 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx5 = jsxWithValidationDynamic;
+        var jsx6 = jsxWithValidationDynamic;
         var jsxs3 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx5;
+        exports.jsx = jsx6;
         exports.jsxs = jsxs3;
       })();
     }
@@ -3445,6 +3445,25 @@ function TextField(_a) {
   ] }) });
 }
 
+// src/components/form/icon-button.tsx
+var import_jsx_runtime4 = __toESM(require_jsx_runtime());
+var IconButtonContainer = styled("button", {
+  border: "none",
+  cursor: "pointer",
+  backgroundColor: "transparent",
+  lineHeight: 0,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  "&:disabled": {
+    opacity: 0.5
+  }
+});
+function IconButton(_a) {
+  var _b = _a, { icon } = _b, rest = __objRest(_b, ["icon"]);
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(IconButtonContainer, __spreadProps(__spreadValues({ type: "button" }, rest), { children: icon }));
+}
+
 // src/components/layout/box.tsx
 var Box = styled("div", {
   padding: "$4"
@@ -3453,7 +3472,7 @@ Box.displayName = "Box";
 
 // src/components/data-display/avatar.tsx
 import * as RadixAvatar from "@radix-ui/react-avatar";
-var import_jsx_runtime4 = __toESM(require_jsx_runtime());
+var import_jsx_runtime5 = __toESM(require_jsx_runtime());
 var AvatarContainer = styled(RadixAvatar.Root, {
   borderRadius: "$rounded-full",
   display: "inline-block",
@@ -3496,7 +3515,7 @@ var AvatarFallback = styled(RadixAvatar.Fallback, {
 });
 function Avatar(_a) {
   var _b = _a, { fallback, size = "md" } = _b, rest = __objRest(_b, ["fallback", "size"]);
-  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(AvatarContainer, __spreadProps(__spreadValues({ size }, rest), { children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(AvatarFallback, { children: fallback }) }));
+  return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(AvatarContainer, __spreadProps(__spreadValues({ size }, rest), { children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(AvatarFallback, { children: fallback }) }));
 }
 export {
   Avatar,
@@ -3507,6 +3526,8 @@ export {
   Checkbox,
   CheckboxContainer,
   CheckboxIndicator,
+  IconButton,
+  IconButtonContainer,
   Input,
   InputContainer,
   InputContent,
