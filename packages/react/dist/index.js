@@ -3042,10 +3042,10 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx9 = jsxWithValidationDynamic;
+        var jsx10 = jsxWithValidationDynamic;
         var jsxs5 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx9;
+        exports.jsx = jsx10;
         exports.jsxs = jsxs5;
       })();
     }
@@ -3067,6 +3067,8 @@ var require_jsx_runtime = __commonJS({
 // src/index.tsx
 var src_exports = {};
 __export(src_exports, {
+  Alert: () => Alert,
+  AlertTitle: () => AlertTitle,
   Avatar: () => Avatar,
   AvatarContainer: () => AvatarContainer,
   AvatarFallback: () => AvatarFallback,
@@ -3554,8 +3556,76 @@ function Avatar(_a) {
   return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(AvatarContainer, __spreadProps(__spreadValues({ size }, rest), { children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(AvatarFallback, { children: fallback }) }));
 }
 
-// src/components/feedback/skeleton.tsx
+// src/components/data-display/alert.tsx
 var import_jsx_runtime6 = __toESM(require_jsx_runtime());
+var AlertContainer = styled("div", {
+  padding: "0 $4 $4 $4",
+  borderTopRightRadius: "$rounded-xs",
+  borderBottomRightRadius: "$rounded-xs",
+  fontFamily: "$default",
+  variants: {
+    variant: {
+      success: {
+        borderLeftWidth: "$tick",
+        borderLeftStyle: "solid",
+        borderLeftColor: "#2e7d32",
+        backgroundColor: "#e3f3e4",
+        color: "#388e3c"
+      },
+      info: {
+        borderLeftWidth: "$tick",
+        borderLeftStyle: "solid",
+        borderLeftColor: "#1565c0",
+        backgroundColor: "#d2e8fa",
+        color: "#1976d2"
+      },
+      warning: {
+        borderLeftWidth: "$tick",
+        borderLeftStyle: "solid",
+        borderLeftColor: "#f9a825",
+        backgroundColor: "#fff9c4",
+        color: "#fbc02d"
+      },
+      danger: {
+        borderLeftWidth: "$tick",
+        borderLeftStyle: "solid",
+        borderLeftColor: "#c62828",
+        backgroundColor: "#ffe0e3",
+        color: "#d32f2f"
+      }
+    }
+  }
+});
+var AlertTitleContainer = styled("p", {
+  fontWeight: "$bold",
+  variants: {
+    variant: {
+      success: {
+        color: "#2e7d32"
+      },
+      info: {
+        color: "#1565c0"
+      },
+      warning: {
+        color: "#f9a825"
+      },
+      danger: {
+        color: "#c62828"
+      }
+    }
+  }
+});
+function AlertTitle(_a) {
+  var _b = _a, { children, variant } = _b, rest = __objRest(_b, ["children", "variant"]);
+  return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(AlertTitleContainer, __spreadProps(__spreadValues({ variant }, rest), { children }));
+}
+function Alert(_a) {
+  var _b = _a, { variant = "info", children } = _b, rest = __objRest(_b, ["variant", "children"]);
+  return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(AlertContainer, __spreadProps(__spreadValues({ variant }, rest), { children }));
+}
+
+// src/components/feedback/skeleton.tsx
+var import_jsx_runtime7 = __toESM(require_jsx_runtime());
 var loading = keyframes({
   "100%": {
     transform: "translateX(100%)"
@@ -3579,19 +3649,19 @@ var SkeletonLoading = styled("div", {
 });
 function Skeleton({ width, height, radius, count }) {
   if (count)
-    return [...Array(count)].map((_, index) => /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+    return [...Array(count)].map((_, index) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
       SkeletonLoading,
       {
         style: { width, height, borderRadius: radius }
       },
       index
     ));
-  return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(SkeletonLoading, { style: { width, height, borderRadius: radius } });
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(SkeletonLoading, { style: { width, height, borderRadius: radius } });
 }
 
 // src/components/navigation/breadcrumb.tsx
 var import_phosphor_react2 = require("phosphor-react");
-var import_jsx_runtime7 = __toESM(require_jsx_runtime());
+var import_jsx_runtime8 = __toESM(require_jsx_runtime());
 var StyledBreadcrumb = styled("nav", {
   display: "flex",
   alignItems: "center",
@@ -3643,17 +3713,17 @@ function BreadcrumbItem({
   isActivePage,
   to
 }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)(StyledBreadcrumbItem, { isActivePage, children: [
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("a", { href: to, children }),
-    /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("span", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(import_phosphor_react2.CaretRight, { size: 16 }) })
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(StyledBreadcrumbItem, { isActivePage, children: [
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("a", { href: to, children }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(import_phosphor_react2.CaretRight, { size: 16 }) })
   ] });
 }
 function Breadcrumb(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(StyledBreadcrumb, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ol", { children: props.children }) }));
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(StyledBreadcrumb, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("ol", { children: props.children }) }));
 }
 
 // src/components/navigation/multistep.tsx
-var import_jsx_runtime8 = __toESM(require_jsx_runtime());
+var import_jsx_runtime9 = __toESM(require_jsx_runtime());
 var MultistepContainer = styled("div", {});
 var MultistepLabel = styled("label", {
   color: "$gray-300",
@@ -3695,21 +3765,23 @@ function Multistep(_a) {
     "label",
     "currentStep"
   ]);
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(MultistepContainer, __spreadProps(__spreadValues({}, rest), { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(MultistepLabel, { children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(MultistepContainer, __spreadProps(__spreadValues({}, rest), { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(MultistepLabel, { children: [
       "Passo ",
       currentStep,
       " de ",
       size,
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { children: label })
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { children: label })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Steps, { css: { "--steps-size": size }, children: Array.from({ length: size }, (_, i) => i + 1).map((step) => {
-      return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Step, { active: currentStep >= step }, step);
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Steps, { css: { "--steps-size": size }, children: Array.from({ length: size }, (_, i) => i + 1).map((step) => {
+      return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Step, { active: currentStep >= step }, step);
     }) })
   ] }));
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  Alert,
+  AlertTitle,
   Avatar,
   AvatarContainer,
   AvatarFallback,
