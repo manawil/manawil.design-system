@@ -3036,11 +3036,11 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx10 = jsxWithValidationDynamic;
-        var jsxs5 = jsxWithValidationStatic;
+        var jsx11 = jsxWithValidationDynamic;
+        var jsxs6 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx10;
-        exports.jsxs = jsxs5;
+        exports.jsx = jsx11;
+        exports.jsxs = jsxs6;
       })();
     }
   }
@@ -3602,8 +3602,46 @@ var Badge = styled("span", {
 });
 Badge.displayName = "Badge";
 
-// src/components/feedback/skeleton.tsx
+// src/components/data-display/chip.tsx
+import { XCircle } from "phosphor-react";
 var import_jsx_runtime7 = __toESM(require_jsx_runtime());
+var ChipContainer = styled("span", {
+  padding: "$2 $4",
+  backgroundColor: "$gray-100",
+  color: "$gray-600",
+  fontFamily: "$default",
+  boxSizing: "border-box",
+  borderRadius: "$rounded-xs",
+  display: "inline-flex",
+  alignItems: "center",
+  transition: "opacity 0.2s",
+  cursor: "pointer",
+  button: {
+    all: "unset",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    cursor: "pointer"
+  },
+  svg: {
+    color: "$gray-600",
+    fontSize: "$lg",
+    marginLeft: "$2"
+  },
+  "&:hover": {
+    opacity: 0.8
+  }
+});
+function Chip(_a) {
+  var _b = _a, { onDelete, children } = _b, rest = __objRest(_b, ["onDelete", "children"]);
+  return /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)(ChipContainer, __spreadProps(__spreadValues({}, rest), { children: [
+    children,
+    Boolean(onDelete) && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", { type: "button", onClick: onDelete, children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(XCircle, { size: 16 }) })
+  ] }));
+}
+
+// src/components/feedback/skeleton.tsx
+var import_jsx_runtime8 = __toESM(require_jsx_runtime());
 var loading = keyframes({
   "100%": {
     transform: "translateX(100%)"
@@ -3627,19 +3665,19 @@ var SkeletonLoading = styled("div", {
 });
 function Skeleton({ width, height, radius, count }) {
   if (count)
-    return [...Array(count)].map((_, index) => /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
+    return [...Array(count)].map((_, index) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
       SkeletonLoading,
       {
         style: { width, height, borderRadius: radius }
       },
       index
     ));
-  return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(SkeletonLoading, { style: { width, height, borderRadius: radius } });
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(SkeletonLoading, { style: { width, height, borderRadius: radius } });
 }
 
 // src/components/navigation/breadcrumb.tsx
 import { CaretRight } from "phosphor-react";
-var import_jsx_runtime8 = __toESM(require_jsx_runtime());
+var import_jsx_runtime9 = __toESM(require_jsx_runtime());
 var StyledBreadcrumb = styled("nav", {
   display: "flex",
   alignItems: "center",
@@ -3691,17 +3729,17 @@ function BreadcrumbItem({
   isActivePage,
   to
 }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(StyledBreadcrumbItem, { isActivePage, children: [
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("a", { href: to, children }),
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(CaretRight, { size: 16 }) })
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(StyledBreadcrumbItem, { isActivePage, children: [
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("a", { href: to, children }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(CaretRight, { size: 16 }) })
   ] });
 }
 function Breadcrumb(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(StyledBreadcrumb, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("ol", { children: props.children }) }));
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(StyledBreadcrumb, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("ol", { children: props.children }) }));
 }
 
 // src/components/navigation/multistep.tsx
-var import_jsx_runtime9 = __toESM(require_jsx_runtime());
+var import_jsx_runtime10 = __toESM(require_jsx_runtime());
 var MultistepContainer = styled("div", {});
 var MultistepLabel = styled("label", {
   color: "$gray-300",
@@ -3743,16 +3781,16 @@ function Multistep(_a) {
     "label",
     "currentStep"
   ]);
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(MultistepContainer, __spreadProps(__spreadValues({}, rest), { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(MultistepLabel, { children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(MultistepContainer, __spreadProps(__spreadValues({}, rest), { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(MultistepLabel, { children: [
       "Passo ",
       currentStep,
       " de ",
       size,
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { children: label })
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { children: label })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Steps, { css: { "--steps-size": size }, children: Array.from({ length: size }, (_, i) => i + 1).map((step) => {
-      return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Step, { active: currentStep >= step }, step);
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Steps, { css: { "--steps-size": size }, children: Array.from({ length: size }, (_, i) => i + 1).map((step) => {
+      return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Step, { active: currentStep >= step }, step);
     }) })
   ] }));
 }
@@ -3818,6 +3856,7 @@ export {
   Checkbox,
   CheckboxContainer,
   CheckboxIndicator,
+  Chip,
   Heading,
   IconButton,
   IconButtonContainer,
