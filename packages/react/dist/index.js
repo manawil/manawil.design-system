@@ -3072,6 +3072,7 @@ __export(src_exports, {
   Avatar: () => Avatar,
   AvatarContainer: () => AvatarContainer,
   AvatarFallback: () => AvatarFallback,
+  Badge: () => Badge,
   Box: () => Box,
   Breadcrumb: () => Breadcrumb,
   BreadcrumbItem: () => BreadcrumbItem,
@@ -3626,6 +3627,22 @@ function Alert(_a) {
   return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(AlertContainer, __spreadProps(__spreadValues({ variant }, rest), { children }));
 }
 
+// src/components/data-display/badge.tsx
+var Badge = styled("span", {
+  display: "inline-flex",
+  borderRadius: "$rounded-full",
+  alignItems: "center",
+  justifyContent: "center",
+  fontFamily: "$default",
+  boxSizing: "border-box",
+  fontSize: "$xs",
+  lineHeight: "$short",
+  backgroundColor: "$primary-300",
+  color: "$gray-50",
+  padding: "$2"
+});
+Badge.displayName = "Badge";
+
 // src/components/feedback/skeleton.tsx
 var import_jsx_runtime7 = __toESM(require_jsx_runtime());
 var loading = keyframes({
@@ -3835,6 +3852,7 @@ Text.displayName = "Text";
   Avatar,
   AvatarContainer,
   AvatarFallback,
+  Badge,
   Box,
   Breadcrumb,
   BreadcrumbItem,
