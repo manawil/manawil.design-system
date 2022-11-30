@@ -3093,6 +3093,7 @@ __export(src_exports, {
   Skeleton: () => Skeleton,
   StyledBreadcrumb: () => StyledBreadcrumb,
   StyledBreadcrumbItem: () => StyledBreadcrumbItem,
+  Text: () => Text,
   TextField: () => TextField
 });
 module.exports = __toCommonJS(src_exports);
@@ -3803,6 +3804,30 @@ var Heading = styled("h2", {
   }
 });
 Heading.displayName = "Heading";
+
+// src/components/typography/text.tsx
+var Text = styled("p", {
+  fontFamily: "$default",
+  lineHeight: "$shorter",
+  margin: 0,
+  color: "$gray-700",
+  variants: {
+    size: {
+      xs: { fontSize: "$xs" },
+      sm: { fontSize: "$sm" },
+      md: { fontSize: "$md" },
+      lg: { fontSize: "$lg" },
+      xl: { fontSize: "$xl" },
+      "2xl": { fontSize: "$2xl" },
+      "3xl": { fontSize: "$3xl" },
+      "4xl": { fontSize: "$4xl" }
+    }
+  },
+  defaultVariants: {
+    size: "md"
+  }
+});
+Text.displayName = "Text";
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Alert,
@@ -3831,6 +3856,7 @@ Heading.displayName = "Heading";
   Skeleton,
   StyledBreadcrumb,
   StyledBreadcrumbItem,
+  Text,
   TextField
 });
 /**

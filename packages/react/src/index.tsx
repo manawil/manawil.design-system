@@ -15,3 +15,4 @@ export * from './components/navigation/breadcrumb'
 export * from './components/navigation/multistep'
 
 export * from './components/typography/heading'
+export * from './components/typography/text'
