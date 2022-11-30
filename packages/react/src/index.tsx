@@ -11,3 +11,4 @@ export * from './components/data-display/avatar'
 export * from './components/feedback/skeleton'
 
 export * from './components/navigation/breadcrumb'
+export * from './components/navigation/multistep'

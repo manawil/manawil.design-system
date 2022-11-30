@@ -3036,11 +3036,11 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx8 = jsxWithValidationDynamic;
-        var jsxs4 = jsxWithValidationStatic;
+        var jsx9 = jsxWithValidationDynamic;
+        var jsxs5 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx8;
-        exports.jsxs = jsxs4;
+        exports.jsx = jsx9;
+        exports.jsxs = jsxs5;
       })();
     }
   }
@@ -3615,6 +3615,63 @@ function BreadcrumbItem({
 function Breadcrumb(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(StyledBreadcrumb, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ol", { children: props.children }) }));
 }
+
+// src/components/navigation/multistep.tsx
+var import_jsx_runtime8 = __toESM(require_jsx_runtime());
+var MultistepContainer = styled("div", {});
+var MultistepLabel = styled("label", {
+  color: "$gray-300",
+  fontSize: "$xs",
+  fontFamily: "$default",
+  display: "block",
+  span: {
+    display: "block",
+    margin: "$1 0",
+    fontSize: "$md",
+    color: "$gray-500"
+  }
+});
+var Steps = styled("div", {
+  display: "grid",
+  gap: "$2",
+  marginTop: "$1",
+  gridTemplateColumns: "repeat(var(--steps-size), 1fr)"
+});
+var Step = styled("div", {
+  height: "4px",
+  borderRadius: "$rounded-xs",
+  backgroundColor: "$gray-100",
+  variants: {
+    active: {
+      true: {
+        backgroundColor: "$primary-300"
+      }
+    }
+  }
+});
+function Multistep(_a) {
+  var _b = _a, {
+    size,
+    label,
+    currentStep = 1
+  } = _b, rest = __objRest(_b, [
+    "size",
+    "label",
+    "currentStep"
+  ]);
+  return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(MultistepContainer, __spreadProps(__spreadValues({}, rest), { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(MultistepLabel, { children: [
+      "Passo ",
+      currentStep,
+      " de ",
+      size,
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("span", { children: label })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Steps, { css: { "--steps-size": size }, children: Array.from({ length: size }, (_, i) => i + 1).map((step) => {
+      return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Step, { active: currentStep >= step }, step);
+    }) })
+  ] }));
+}
 export {
   Avatar,
   AvatarContainer,
@@ -3631,6 +3688,7 @@ export {
   Input,
   InputContainer,
   InputContent,
+  Multistep,
   RadioButton,
   RadioButtonContainer,
   RadioButtonIndicator,
