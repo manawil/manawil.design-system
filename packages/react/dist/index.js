@@ -3042,11 +3042,11 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx11 = jsxWithValidationDynamic;
-        var jsxs6 = jsxWithValidationStatic;
+        var jsx12 = jsxWithValidationDynamic;
+        var jsxs7 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx11;
-        exports.jsxs = jsxs6;
+        exports.jsx = jsx12;
+        exports.jsxs = jsxs7;
       })();
     }
   }
@@ -3095,6 +3095,7 @@ __export(src_exports, {
   Skeleton: () => Skeleton,
   StyledBreadcrumb: () => StyledBreadcrumb,
   StyledBreadcrumbItem: () => StyledBreadcrumbItem,
+  Table: () => Table,
   Text: () => Text,
   TextField: () => TextField
 });
@@ -3122,8 +3123,8 @@ var colors = {
   "secondary-700": "#C59A00",
   "secondary-800": "#A38000",
   "secondary-900": "#7A6000",
-  "gray-50": "#F4F4F4",
-  "gray-100": "#EAEAEA",
+  "gray-50": "#FAFAFA",
+  "gray-100": "#EDEDED",
   "gray-200": "#DDDDDD",
   "gray-300": "#BCBCBC",
   "gray-400": "#969696",
@@ -3142,7 +3143,7 @@ var fontFamilies = {
 };
 var fontWeights = {
   regular: 400,
-  medium: 500,
+  medium: 600,
   bold: 700
 };
 var fontSizes = {
@@ -3707,19 +3708,76 @@ var SkeletonLoading = styled("div", {
 });
 function Skeleton({ width, height, radius, count }) {
   if (count)
-    return [...Array(count)].map((_, index) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(import_jsx_runtime8.Fragment, { children: [...Array(count)].map((_, index) => /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
       SkeletonLoading,
       {
         style: { width, height, borderRadius: radius }
       },
       index
-    ));
+    )) });
   return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(SkeletonLoading, { style: { width, height, borderRadius: radius } });
+}
+
+// src/components/data-display/table.tsx
+var import_jsx_runtime9 = __toESM(require_jsx_runtime());
+var TableContainer = styled("div", {
+  flex: 1,
+  overflow: "auto"
+});
+var StyledTable = styled("table", {
+  width: "100%",
+  minWidth: "600px",
+  borderCollapse: "collapse",
+  fontFamily: "$default",
+  boxSizing: "border-box",
+  th: {
+    backgroundColor: "transparent",
+    padding: "$4",
+    textAlign: "left",
+    fontWeight: "$medium",
+    lineHeight: "$tall",
+    fontSize: "$xs",
+    textTransform: "uppercase",
+    color: "$gray-500"
+  },
+  td: {
+    background: "$gray-100",
+    padding: "$4",
+    fontSize: "$sm",
+    lineHeight: "$tall",
+    color: "$gray-700",
+    borderTopWidth: "$thick",
+    borderTopStyle: "solid",
+    borderTopColor: "$gray-50"
+  }
+});
+function Table(_a) {
+  var _b = _a, {
+    columns,
+    dataSource,
+    loading: loading2 = false
+  } = _b, rest = __objRest(_b, [
+    "columns",
+    "dataSource",
+    "loading"
+  ]);
+  if (loading2)
+    return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(TableContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(StyledTable, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tr", { children: columns.map((column) => /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: column.title }, column.key)) }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tbody", { children: [...Array(6)].map((_, index) => /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tr", { children: [...Array(columns.length)].map((__, idx) => /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Skeleton, { width: "100%", height: "12px", radius: "999px" }) }, idx)) }, index)) })
+    ] }) });
+  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(TableContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(StyledTable, __spreadProps(__spreadValues({}, rest), { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tr", { children: columns.map((column) => /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: column.title }, column.key)) }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tbody", { children: dataSource.map((data, index) => /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tr", { children: columns.map((column, idx) => {
+      var _a2, _b2;
+      return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: (_b2 = (_a2 = column == null ? void 0 : column.render) == null ? void 0 : _a2.call(column, data[column.dataIndex], data)) != null ? _b2 : data[column.dataIndex] }, idx);
+    }) }, index)) })
+  ] })) });
 }
 
 // src/components/navigation/breadcrumb.tsx
 var import_phosphor_react3 = require("phosphor-react");
-var import_jsx_runtime9 = __toESM(require_jsx_runtime());
+var import_jsx_runtime10 = __toESM(require_jsx_runtime());
 var StyledBreadcrumb = styled("nav", {
   display: "flex",
   alignItems: "center",
@@ -3771,17 +3829,17 @@ function BreadcrumbItem({
   isActivePage,
   to
 }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(StyledBreadcrumbItem, { isActivePage, children: [
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("a", { href: to, children }),
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("span", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(import_phosphor_react3.CaretRight, { size: 16 }) })
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(StyledBreadcrumbItem, { isActivePage, children: [
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("a", { href: to, children }),
+    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(import_phosphor_react3.CaretRight, { size: 16 }) })
   ] });
 }
 function Breadcrumb(props) {
-  return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(StyledBreadcrumb, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("ol", { children: props.children }) }));
+  return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(StyledBreadcrumb, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("ol", { children: props.children }) }));
 }
 
 // src/components/navigation/multistep.tsx
-var import_jsx_runtime10 = __toESM(require_jsx_runtime());
+var import_jsx_runtime11 = __toESM(require_jsx_runtime());
 var MultistepContainer = styled("div", {});
 var MultistepLabel = styled("label", {
   color: "$gray-300",
@@ -3823,16 +3881,16 @@ function Multistep(_a) {
     "label",
     "currentStep"
   ]);
-  return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(MultistepContainer, __spreadProps(__spreadValues({}, rest), { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(MultistepLabel, { children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)(MultistepContainer, __spreadProps(__spreadValues({}, rest), { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)(MultistepLabel, { children: [
       "Passo ",
       currentStep,
       " de ",
       size,
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { children: label })
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("span", { children: label })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Steps, { css: { "--steps-size": size }, children: Array.from({ length: size }, (_, i) => i + 1).map((step) => {
-      return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Step, { active: currentStep >= step }, step);
+    /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(Steps, { css: { "--steps-size": size }, children: Array.from({ length: size }, (_, i) => i + 1).map((step) => {
+      return /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(Step, { active: currentStep >= step }, step);
     }) })
   ] }));
 }
@@ -3914,6 +3972,7 @@ Text.displayName = "Text";
   Skeleton,
   StyledBreadcrumb,
   StyledBreadcrumbItem,
+  Table,
   Text,
   TextField
 });

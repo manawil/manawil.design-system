@@ -21,8 +21,8 @@ export const colors = {
   'secondary-800': '#A38000',
   'secondary-900': '#7A6000',
 
-  'gray-50': '#F4F4F4',
-  'gray-100': '#EAEAEA',
+  'gray-50': '#FAFAFA',
+  'gray-100': '#EDEDED',
   'gray-200': '#DDDDDD',
   'gray-300': '#BCBCBC',
   'gray-400': '#969696',

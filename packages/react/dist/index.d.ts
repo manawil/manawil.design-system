@@ -38,8 +38,8 @@ declare const Button: _stitches_react_types_styled_component.StyledComponent<"bu
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -65,7 +65,7 @@ declare const Button: _stitches_react_types_styled_component.StyledComponent<"bu
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -272,8 +272,8 @@ declare const CheckboxContainer: _stitches_react_types_styled_component.StyledCo
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -299,7 +299,7 @@ declare const CheckboxContainer: _stitches_react_types_styled_component.StyledCo
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -501,8 +501,8 @@ declare const CheckboxIndicator: _stitches_react_types_styled_component.StyledCo
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -528,7 +528,7 @@ declare const CheckboxIndicator: _stitches_react_types_styled_component.StyledCo
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -733,8 +733,8 @@ declare const RadioButtonContainer: _stitches_react_types_styled_component.Style
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -760,7 +760,7 @@ declare const RadioButtonContainer: _stitches_react_types_styled_component.Style
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -962,8 +962,8 @@ declare const RadioButtonItem: _stitches_react_types_styled_component.StyledComp
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -989,7 +989,7 @@ declare const RadioButtonItem: _stitches_react_types_styled_component.StyledComp
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -1191,8 +1191,8 @@ declare const RadioButtonIndicator: _stitches_react_types_styled_component.Style
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -1218,7 +1218,7 @@ declare const RadioButtonIndicator: _stitches_react_types_styled_component.Style
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -1432,8 +1432,8 @@ declare const InputContainer: _stitches_react_types_styled_component.StyledCompo
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -1459,7 +1459,7 @@ declare const InputContainer: _stitches_react_types_styled_component.StyledCompo
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -1661,8 +1661,8 @@ declare const InputContent: _stitches_react_types_styled_component.StyledCompone
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -1688,7 +1688,7 @@ declare const InputContent: _stitches_react_types_styled_component.StyledCompone
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -1893,8 +1893,8 @@ declare const Input: _stitches_react_types_styled_component.StyledComponent<"inp
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -1920,7 +1920,7 @@ declare const Input: _stitches_react_types_styled_component.StyledComponent<"inp
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -2124,8 +2124,8 @@ declare const IconButtonContainer: _stitches_react_types_styled_component.Styled
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -2151,7 +2151,7 @@ declare const IconButtonContainer: _stitches_react_types_styled_component.Styled
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -2358,8 +2358,8 @@ declare const Box: _stitches_react_types_styled_component.StyledComponent<"div",
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -2385,7 +2385,7 @@ declare const Box: _stitches_react_types_styled_component.StyledComponent<"div",
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -2591,8 +2591,8 @@ declare const AvatarContainer: _stitches_react_types_styled_component.StyledComp
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -2618,7 +2618,7 @@ declare const AvatarContainer: _stitches_react_types_styled_component.StyledComp
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -2820,8 +2820,8 @@ declare const AvatarFallback: _stitches_react_types_styled_component.StyledCompo
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -2847,7 +2847,7 @@ declare const AvatarFallback: _stitches_react_types_styled_component.StyledCompo
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -3026,7 +3026,7 @@ interface AvatarProps extends ComponentProps<typeof AvatarContainer> {
 declare function Avatar({ fallback, size, ...rest }: AvatarProps): JSX.Element;
 
 declare const AlertContainer: _stitches_react_types_styled_component.StyledComponent<"div", {
-    variant?: "success" | "info" | "warning" | "danger" | undefined;
+    variant?: "danger" | "success" | "info" | "warning" | undefined;
 }, {
     web: "(max-width: 1280px)";
     medium: "(max-width: 992px)";
@@ -3057,8 +3057,8 @@ declare const AlertContainer: _stitches_react_types_styled_component.StyledCompo
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -3084,7 +3084,7 @@ declare const AlertContainer: _stitches_react_types_styled_component.StyledCompo
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -3257,7 +3257,7 @@ declare const AlertContainer: _stitches_react_types_styled_component.StyledCompo
     zIndex: "zIndices";
 }, {}>>;
 declare const AlertTitleContainer: _stitches_react_types_styled_component.StyledComponent<"p", {
-    variant?: "success" | "info" | "warning" | "danger" | undefined;
+    variant?: "danger" | "success" | "info" | "warning" | undefined;
 }, {
     web: "(max-width: 1280px)";
     medium: "(max-width: 992px)";
@@ -3288,8 +3288,8 @@ declare const AlertTitleContainer: _stitches_react_types_styled_component.Styled
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -3315,7 +3315,7 @@ declare const AlertTitleContainer: _stitches_react_types_styled_component.Styled
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -3528,8 +3528,8 @@ declare const Badge: _stitches_react_types_styled_component.StyledComponent<"spa
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -3555,7 +3555,7 @@ declare const Badge: _stitches_react_types_styled_component.StyledComponent<"spa
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -3759,8 +3759,8 @@ declare const ChipContainer: _stitches_react_types_styled_component.StyledCompon
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -3786,7 +3786,7 @@ declare const ChipContainer: _stitches_react_types_styled_component.StyledCompon
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -3964,6 +3964,250 @@ interface ChipProps extends ComponentProps<typeof ChipContainer> {
 }
 declare function Chip({ onDelete, children, ...rest }: ChipProps): JSX.Element;
 
+declare const StyledTable: _stitches_react_types_styled_component.StyledComponent<"table", {}, {
+    web: "(max-width: 1280px)";
+    medium: "(max-width: 992px)";
+    mobile: "(max-width: 768px)";
+}, _stitches_react_types_css_util.CSS<{
+    web: "(max-width: 1280px)";
+    medium: "(max-width: 992px)";
+    mobile: "(max-width: 768px)";
+}, {
+    colors: {
+        readonly 'primary-50': "#DEECFF";
+        readonly 'primary-100': "#BAD6FF";
+        readonly 'primary-200': "#82B5FF";
+        readonly 'primary-300': "#549AFF";
+        readonly 'primary-400': "#217CFF";
+        readonly 'primary-500': "#005CE1";
+        readonly 'primary-600': "#004BB7";
+        readonly 'primary-700': "#003C93";
+        readonly 'primary-800': "#002F72";
+        readonly 'primary-900': "#00204E";
+        readonly 'secondary-50': "#FFF2C0";
+        readonly 'secondary-100': "#FFE78C";
+        readonly 'secondary-200': "#FFDE66";
+        readonly 'secondary-300': "#FFD94A";
+        readonly 'secondary-400': "#FFD229";
+        readonly 'secondary-500': "#FBC80B";
+        readonly 'secondary-600': "#E5B400";
+        readonly 'secondary-700': "#C59A00";
+        readonly 'secondary-800': "#A38000";
+        readonly 'secondary-900': "#7A6000";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
+        readonly 'gray-200': "#DDDDDD";
+        readonly 'gray-300': "#BCBCBC";
+        readonly 'gray-400': "#969696";
+        readonly 'gray-500': "#787878";
+        readonly 'gray-600': "#606060";
+        readonly 'gray-700': "#484848";
+        readonly 'gray-800': "#323232";
+        readonly 'gray-900': "#222222";
+        readonly 'success-light': "#04D361";
+        readonly 'success-dark': "#1B873F";
+        readonly 'danger-light': "#F75A68";
+        readonly 'danger-dark': "#CC2937";
+    };
+    fontSizes: {
+        readonly xs: "0.75rem";
+        readonly sm: "0.875rem";
+        readonly md: "1rem";
+        readonly lg: "1.25rem";
+        readonly xl: "1.5rem";
+        readonly '2xl': "2rem";
+        readonly '3xl': "3rem";
+        readonly '4xl': "4rem";
+    };
+    fontWeights: {
+        readonly regular: 400;
+        readonly medium: 600;
+        readonly bold: 700;
+    };
+    lineHeights: {
+        readonly shorter: "120%";
+        readonly short: "140%";
+        readonly tall: "160%";
+        readonly taller: "180%";
+    };
+    borderWidths: {
+        readonly thin: "1px";
+        readonly mid: "2px";
+        readonly thick: "4px";
+    };
+    fonts: {
+        readonly default: "DM Sans, sans-serif";
+    };
+    radii: {
+        readonly 'rounded-xs': "4px";
+        readonly 'rounded-sm': "8px";
+        readonly 'rounded-md': "16px";
+        readonly 'rounded-full': "999px";
+    };
+    space: {
+        readonly 0: "0";
+        readonly 1: "0.25rem";
+        readonly 2: "0.5rem";
+        readonly 3: "0.75rem";
+        readonly 4: "1rem";
+        readonly 5: "1.25rem";
+        readonly 6: "1.5rem";
+        readonly 8: "2rem";
+        readonly 10: "2.5rem";
+        readonly 12: "3rem";
+        readonly 16: "4rem";
+        readonly 20: "5rem";
+        readonly 40: "7rem";
+    };
+    zIndices: {
+        readonly overlay: 9995;
+        readonly modal: 9999;
+    };
+}, {
+    width: "spacing";
+    height: "spacing";
+    gap: "space";
+    gridGap: "space";
+    columnGap: "space";
+    gridColumnGap: "space";
+    rowGap: "space";
+    gridRowGap: "space";
+    inset: "space";
+    insetBlock: "space";
+    insetBlockEnd: "space";
+    insetBlockStart: "space";
+    insetInline: "space";
+    insetInlineEnd: "space";
+    insetInlineStart: "space";
+    margin: "space";
+    marginTop: "space";
+    marginRight: "space";
+    marginBottom: "space";
+    marginLeft: "space";
+    marginBlock: "space";
+    marginBlockEnd: "space";
+    marginBlockStart: "space";
+    marginInline: "space";
+    marginInlineEnd: "space";
+    marginInlineStart: "space";
+    padding: "space";
+    paddingTop: "space";
+    paddingRight: "space";
+    paddingBottom: "space";
+    paddingLeft: "space";
+    paddingBlock: "space";
+    paddingBlockEnd: "space";
+    paddingBlockStart: "space";
+    paddingInline: "space";
+    paddingInlineEnd: "space";
+    paddingInlineStart: "space";
+    scrollMargin: "space";
+    scrollMarginTop: "space";
+    scrollMarginRight: "space";
+    scrollMarginBottom: "space";
+    scrollMarginLeft: "space";
+    scrollMarginBlock: "space";
+    scrollMarginBlockEnd: "space";
+    scrollMarginBlockStart: "space";
+    scrollMarginInline: "space";
+    scrollMarginInlineEnd: "space";
+    scrollMarginInlineStart: "space";
+    scrollPadding: "space";
+    scrollPaddingTop: "space";
+    scrollPaddingRight: "space";
+    scrollPaddingBottom: "space";
+    scrollPaddingLeft: "space";
+    scrollPaddingBlock: "space";
+    scrollPaddingBlockEnd: "space";
+    scrollPaddingBlockStart: "space";
+    scrollPaddingInline: "space";
+    scrollPaddingInlineEnd: "space";
+    scrollPaddingInlineStart: "space";
+    top: "space";
+    right: "space";
+    bottom: "space";
+    left: "space";
+    fontSize: "fontSizes";
+    background: "colors";
+    backgroundColor: "colors";
+    backgroundImage: "colors";
+    borderImage: "colors";
+    border: "colors";
+    borderBlock: "colors";
+    borderBlockEnd: "colors";
+    borderBlockStart: "colors";
+    borderBottom: "colors";
+    borderBottomColor: "colors";
+    borderColor: "colors";
+    borderInline: "colors";
+    borderInlineEnd: "colors";
+    borderInlineStart: "colors";
+    borderLeft: "colors";
+    borderLeftColor: "colors";
+    borderRight: "colors";
+    borderRightColor: "colors";
+    borderTop: "colors";
+    borderTopColor: "colors";
+    caretColor: "colors";
+    color: "colors";
+    columnRuleColor: "colors";
+    outline: "colors";
+    outlineColor: "colors";
+    fill: "colors";
+    stroke: "colors";
+    textDecorationColor: "colors";
+    fontFamily: "fonts";
+    fontWeight: "fontWeights";
+    lineHeight: "lineHeights";
+    letterSpacing: "letterSpacings";
+    blockSize: "sizes";
+    minBlockSize: "sizes";
+    maxBlockSize: "sizes";
+    inlineSize: "sizes";
+    minInlineSize: "sizes";
+    maxInlineSize: "sizes";
+    minWidth: "sizes";
+    maxWidth: "sizes";
+    minHeight: "sizes";
+    maxHeight: "sizes";
+    flexBasis: "sizes";
+    gridTemplateColumns: "sizes";
+    gridTemplateRows: "sizes";
+    borderWidth: "borderWidths";
+    borderTopWidth: "borderWidths";
+    borderLeftWidth: "borderWidths";
+    borderRightWidth: "borderWidths";
+    borderBottomWidth: "borderWidths";
+    borderStyle: "borderStyles";
+    borderTopStyle: "borderStyles";
+    borderLeftStyle: "borderStyles";
+    borderRightStyle: "borderStyles";
+    borderBottomStyle: "borderStyles";
+    borderRadius: "radii";
+    borderTopLeftRadius: "radii";
+    borderTopRightRadius: "radii";
+    borderBottomRightRadius: "radii";
+    borderBottomLeftRadius: "radii";
+    boxShadow: "shadows";
+    textShadow: "shadows";
+    transition: "transitions";
+    zIndex: "zIndices";
+}, {}>>;
+type RowType = string | number | JSX.Element;
+type DataSourceType = Record<string, RowType>;
+type ColumnType = {
+    title: string;
+    dataIndex: string;
+    key: string;
+    render?: (value: RowType, row?: DataSourceType) => JSX.Element;
+};
+interface TableProps extends ComponentProps<typeof StyledTable> {
+    columns: ColumnType[];
+    dataSource: DataSourceType[];
+    loading?: boolean;
+}
+declare function Table({ columns, dataSource, loading, ...rest }: TableProps): JSX.Element;
+
 declare const SkeletonLoading: _stitches_react_types_styled_component.StyledComponent<"div", {}, {
     web: "(max-width: 1280px)";
     medium: "(max-width: 992px)";
@@ -3994,8 +4238,8 @@ declare const SkeletonLoading: _stitches_react_types_styled_component.StyledComp
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -4021,7 +4265,7 @@ declare const SkeletonLoading: _stitches_react_types_styled_component.StyledComp
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -4199,7 +4443,7 @@ interface SkeletonProps extends ComponentProps<typeof SkeletonLoading> {
     radius?: number | string;
     count?: number;
 }
-declare function Skeleton({ width, height, radius, count }: SkeletonProps): JSX.Element | JSX.Element[];
+declare function Skeleton({ width, height, radius, count }: SkeletonProps): JSX.Element;
 
 declare const StyledBreadcrumb: _stitches_react_types_styled_component.StyledComponent<"nav", {}, {
     web: "(max-width: 1280px)";
@@ -4231,8 +4475,8 @@ declare const StyledBreadcrumb: _stitches_react_types_styled_component.StyledCom
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -4258,7 +4502,7 @@ declare const StyledBreadcrumb: _stitches_react_types_styled_component.StyledCom
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -4462,8 +4706,8 @@ declare const StyledBreadcrumbItem: _stitches_react_types_styled_component.Style
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -4489,7 +4733,7 @@ declare const StyledBreadcrumbItem: _stitches_react_types_styled_component.Style
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -4702,8 +4946,8 @@ declare const MultistepContainer: _stitches_react_types_styled_component.StyledC
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -4729,7 +4973,7 @@ declare const MultistepContainer: _stitches_react_types_styled_component.StyledC
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -4940,8 +5184,8 @@ declare const Heading: _stitches_react_types_styled_component.StyledComponent<"h
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -4967,7 +5211,7 @@ declare const Heading: _stitches_react_types_styled_component.StyledComponent<"h
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -5175,8 +5419,8 @@ declare const Text: _stitches_react_types_styled_component.StyledComponent<"p", 
         readonly 'secondary-700': "#C59A00";
         readonly 'secondary-800': "#A38000";
         readonly 'secondary-900': "#7A6000";
-        readonly 'gray-50': "#F4F4F4";
-        readonly 'gray-100': "#EAEAEA";
+        readonly 'gray-50': "#FAFAFA";
+        readonly 'gray-100': "#EDEDED";
         readonly 'gray-200': "#DDDDDD";
         readonly 'gray-300': "#BCBCBC";
         readonly 'gray-400': "#969696";
@@ -5202,7 +5446,7 @@ declare const Text: _stitches_react_types_styled_component.StyledComponent<"p", 
     };
     fontWeights: {
         readonly regular: 400;
-        readonly medium: 500;
+        readonly medium: 600;
         readonly bold: 700;
     };
     lineHeights: {
@@ -5378,4 +5622,4 @@ interface TextProps extends ComponentProps<typeof Text> {
     as?: ElementType;
 }
 
-export { Alert, AlertProps, AlertTitle, AlertTitleProps, Avatar, AvatarContainer, AvatarFallback, AvatarProps, Badge, BadgeProps, Box, BoxProps, Breadcrumb, BreadcrumbItem, BreadcrumbProps, Button, ButtonProps, Checkbox, CheckboxContainer, CheckboxIndicator, CheckboxProps, Chip, ChipProps, Heading, HeadingProps, IconButton, IconButtonContainer, IconButtonProps, Input, InputContainer, InputContent, Multistep, MultistepProps, RadioButton, RadioButtonContainer, RadioButtonIndicator, RadioButtonItem, RadioButtonProps, Skeleton, SkeletonProps, StyledBreadcrumb, StyledBreadcrumbItem, Text, TextField, TextFieldProps, TextProps };
+export { Alert, AlertProps, AlertTitle, AlertTitleProps, Avatar, AvatarContainer, AvatarFallback, AvatarProps, Badge, BadgeProps, Box, BoxProps, Breadcrumb, BreadcrumbItem, BreadcrumbProps, Button, ButtonProps, Checkbox, CheckboxContainer, CheckboxIndicator, CheckboxProps, Chip, ChipProps, ColumnType, DataSourceType, Heading, HeadingProps, IconButton, IconButtonContainer, IconButtonProps, Input, InputContainer, InputContent, Multistep, MultistepProps, RadioButton, RadioButtonContainer, RadioButtonIndicator, RadioButtonItem, RadioButtonProps, RowType, Skeleton, SkeletonProps, StyledBreadcrumb, StyledBreadcrumbItem, Table, TableProps, Text, TextField, TextFieldProps, TextProps };

@@ -19,8 +19,8 @@ declare const colors: {
     readonly 'secondary-700': "#C59A00";
     readonly 'secondary-800': "#A38000";
     readonly 'secondary-900': "#7A6000";
-    readonly 'gray-50': "#F4F4F4";
-    readonly 'gray-100': "#EAEAEA";
+    readonly 'gray-50': "#FAFAFA";
+    readonly 'gray-100': "#EDEDED";
     readonly 'gray-200': "#DDDDDD";
     readonly 'gray-300': "#BCBCBC";
     readonly 'gray-400': "#969696";
@@ -41,7 +41,7 @@ declare const fontFamilies: {
 
 declare const fontWeights: {
     readonly regular: 400;
-    readonly medium: 500;
+    readonly medium: 600;
     readonly bold: 700;
 };
 

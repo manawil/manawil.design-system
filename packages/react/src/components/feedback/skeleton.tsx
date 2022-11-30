@@ -35,12 +35,16 @@ export interface SkeletonProps extends ComponentProps<typeof SkeletonLoading> {
 
 export function Skeleton({ width, height, radius, count }: SkeletonProps) {
   if (count)
-    return [...Array(count)].map((_, index) => (
-      <SkeletonLoading
-        key={index}
-        style={{ width, height, borderRadius: radius }}
-      />
-    ))
+    return (
+      <>
+        {[...Array(count)].map((_, index) => (
+          <SkeletonLoading
+            key={index}
+            style={{ width, height, borderRadius: radius }}
+          />
+        ))}
+      </>
+    )
 
   return <SkeletonLoading style={{ width, height, borderRadius: radius }} />
 }
