@@ -3079,6 +3079,7 @@ __export(src_exports, {
   Checkbox: () => Checkbox,
   CheckboxContainer: () => CheckboxContainer,
   CheckboxIndicator: () => CheckboxIndicator,
+  Heading: () => Heading,
   IconButton: () => IconButton,
   IconButtonContainer: () => IconButtonContainer,
   Input: () => Input,
@@ -3778,6 +3779,30 @@ function Multistep(_a) {
     }) })
   ] }));
 }
+
+// src/components/typography/heading.tsx
+var Heading = styled("h2", {
+  fontFamily: "$default",
+  lineHeight: "$shorter",
+  margin: 0,
+  color: "$gray-800",
+  variants: {
+    size: {
+      xs: { fontSize: "$xs" },
+      sm: { fontSize: "$sm" },
+      md: { fontSize: "$md" },
+      lg: { fontSize: "$lg" },
+      xl: { fontSize: "$xl" },
+      "2xl": { fontSize: "$2xl" },
+      "3xl": { fontSize: "$3xl" },
+      "4xl": { fontSize: "$4xl" }
+    }
+  },
+  defaultVariants: {
+    size: "md"
+  }
+});
+Heading.displayName = "Heading";
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Alert,
@@ -3792,6 +3817,7 @@ function Multistep(_a) {
   Checkbox,
   CheckboxContainer,
   CheckboxIndicator,
+  Heading,
   IconButton,
   IconButtonContainer,
   Input,
