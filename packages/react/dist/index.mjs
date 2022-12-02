@@ -3036,10 +3036,10 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx12 = jsxWithValidationDynamic;
+        var jsx17 = jsxWithValidationDynamic;
         var jsxs7 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx12;
+        exports.jsx = jsx17;
         exports.jsxs = jsxs7;
       })();
     }
@@ -3895,6 +3895,80 @@ var Text = styled("p", {
   }
 });
 Text.displayName = "Text";
+
+// src/components/overlay/dropdown/index.tsx
+import * as DropdownMenu5 from "@radix-ui/react-dropdown-menu";
+
+// src/components/overlay/dropdown/content.tsx
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
+var import_jsx_runtime12 = __toESM(require_jsx_runtime());
+var StyledContent = styled(DropdownMenu.Content, {
+  minWidth: "220px",
+  backgroundColor: "white",
+  borderRadius: "6px",
+  padding: "5px",
+  boxShadow: "0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)",
+  animationDuration: "400ms",
+  animationTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+  willChange: "transform, opacity"
+});
+function DropdownContent(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(DropdownMenu.Portal, { children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(StyledContent, __spreadProps(__spreadValues({ sideOffset: 5 }, props), { children: props.children })) });
+}
+
+// src/components/overlay/dropdown/divider.tsx
+import * as DropdownMenu2 from "@radix-ui/react-dropdown-menu";
+var import_jsx_runtime13 = __toESM(require_jsx_runtime());
+var StyledDivider = styled(DropdownMenu2.Separator, {
+  height: 1,
+  backgroundColor: "$gray-100",
+  margin: "$1 $2"
+});
+function DropdownDivider(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(StyledDivider, __spreadValues({}, props));
+}
+
+// src/components/overlay/dropdown/item.tsx
+import * as DropdownMenu3 from "@radix-ui/react-dropdown-menu";
+var import_jsx_runtime14 = __toESM(require_jsx_runtime());
+var StyledItem = styled(DropdownMenu3.Item, {
+  fontSize: "$sm",
+  lineHeight: "$short",
+  color: "$gray-800",
+  borderRadius: "$rounded-xs",
+  display: "flex",
+  alignItems: "center",
+  height: "1.5rem",
+  padding: "$1 $2",
+  paddingLeft: "$6",
+  position: "relative",
+  userSelect: "none",
+  outline: "none",
+  fontFamily: "$default",
+  cursor: "pointer",
+  transition: "background-color 0.2s",
+  "&:hover": {
+    backgroundColor: "$gray-100"
+  }
+});
+function DropdownItem(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(StyledItem, __spreadProps(__spreadValues({}, props), { children: props.children }));
+}
+
+// src/components/overlay/dropdown/trigger.tsx
+import * as DropdownMenu4 from "@radix-ui/react-dropdown-menu";
+var import_jsx_runtime15 = __toESM(require_jsx_runtime());
+var StyledTrigger = styled(DropdownMenu4.Trigger, {});
+function DropdownTrigger(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(StyledTrigger, __spreadProps(__spreadValues({}, props), { children: props.children }));
+}
+
+// src/components/overlay/dropdown/index.tsx
+var import_jsx_runtime16 = __toESM(require_jsx_runtime());
+var StyledDropdown = styled(DropdownMenu5.Root, {});
+function Dropdown(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(StyledDropdown, { children: props.children });
+}
 export {
   Alert,
   AlertTitle,
@@ -3910,6 +3984,11 @@ export {
   CheckboxContainer,
   CheckboxIndicator,
   Chip,
+  Dropdown,
+  DropdownContent,
+  DropdownDivider,
+  DropdownItem,
+  DropdownTrigger,
   Heading,
   IconButton,
   IconButtonContainer,

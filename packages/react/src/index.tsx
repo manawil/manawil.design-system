@@ -19,3 +19,5 @@ export * from './components/navigation/multistep'
 
 export * from './components/typography/heading'
 export * from './components/typography/text'
+
+export * from './components/overlay/dropdown'
