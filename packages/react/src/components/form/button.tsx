@@ -88,3 +88,5 @@ export interface ButtonProps extends ComponentProps<typeof Button> {
   variant: 'primary' | 'secondary' | 'outline' | 'danger' | 'ghost'
   children: ReactNode
 }
+
+Button.displayName = 'Button'

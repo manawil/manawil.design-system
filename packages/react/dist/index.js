@@ -3313,6 +3313,7 @@ var Button = styled("button", {
     variant: "primary"
   }
 });
+Button.displayName = "Button";
 
 // src/components/form/checkbox.tsx
 var import_phosphor_react = require("phosphor-react");
@@ -4096,6 +4097,8 @@ var StyledContent3 = styled(Dialog.Content, {
   maxHeight: "85vh",
   padding: "25px",
   animation: "contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1)",
+  boxSizing: "border-box",
+  fontFamily: "$default",
   "&:focus": {
     outline: "none"
   }

@@ -25,6 +25,8 @@ const StyledContent = styled(Dialog.Content, {
   maxHeight: '85vh',
   padding: '25px',
   animation: 'contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1)',
+  boxSizing: 'border-box',
+  fontFamily: '$default',
 
   '&:focus': {
     outline: 'none',
