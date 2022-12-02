@@ -3686,8 +3686,11 @@ function Chip(_a) {
 // src/components/feedback/skeleton.tsx
 var import_jsx_runtime8 = __toESM(require_jsx_runtime());
 var loading = keyframes({
-  "100%": {
-    transform: "translateX(100%)"
+  "0%, 100%": {
+    opacity: 1
+  },
+  "50%": {
+    opacity: 0.5
   }
 });
 var SkeletonLoading = styled("div", {
@@ -3696,15 +3699,8 @@ var SkeletonLoading = styled("div", {
   boxSizing: "border-box",
   zIndex: 1,
   borderRadius: "$rounded-xs",
-  backgroundColor: "$gray-100",
-  "&::after": {
-    content: "",
-    position: "absolute",
-    inset: 0,
-    transform: "translateX(-100%)",
-    backgroundImage: "linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.1) 20%, rgba(196, 196, 196, 0.5) 60%, rgba(255, 255, 255, 0))",
-    animation: `${loading} 3s infinite`
-  }
+  backgroundColor: "$gray-300",
+  animation: `${loading} 2s cubic-bezier(0.4, 0, 0.6, 1) infinite`
 });
 function Skeleton({ width, height, radius, count }) {
   if (count)
