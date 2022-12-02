@@ -3036,11 +3036,11 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx17 = jsxWithValidationDynamic;
-        var jsxs7 = jsxWithValidationStatic;
+        var jsx20 = jsxWithValidationDynamic;
+        var jsxs8 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx17;
-        exports.jsxs = jsxs7;
+        exports.jsx = jsx20;
+        exports.jsxs = jsxs8;
       })();
     }
   }
@@ -3969,6 +3969,50 @@ var StyledDropdown = styled(DropdownMenu5.Root, {});
 function Dropdown(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(StyledDropdown, { children: props.children });
 }
+
+// src/components/overlay/tooltip/index.tsx
+import * as RadixTooltip3 from "@radix-ui/react-tooltip";
+
+// src/components/overlay/tooltip/content.tsx
+import * as RadixTooltip from "@radix-ui/react-tooltip";
+var import_jsx_runtime17 = __toESM(require_jsx_runtime());
+var StyledContent2 = styled(RadixTooltip.Content, {
+  padding: "10px 15px",
+  fontSize: "15px",
+  lineHeight: 1,
+  color: "black",
+  backgroundColor: "white",
+  boxShadow: "hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px",
+  userSelect: "none",
+  animationDuration: "100ms",
+  animationTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+  willChange: "transform, opacity",
+  fontFamily: "$default"
+});
+var StyledArrow = styled(RadixTooltip.Arrow, {
+  fill: "white"
+});
+function TooltipContent(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime17.jsx)(RadixTooltip.Portal, { children: /* @__PURE__ */ (0, import_jsx_runtime17.jsxs)(StyledContent2, __spreadProps(__spreadValues({ sideOffset: 5 }, props), { children: [
+    props.children,
+    /* @__PURE__ */ (0, import_jsx_runtime17.jsx)(StyledArrow, {})
+  ] })) });
+}
+
+// src/components/overlay/tooltip/trigger.tsx
+import * as RadixTooltip2 from "@radix-ui/react-tooltip";
+var import_jsx_runtime18 = __toESM(require_jsx_runtime());
+var StyledTtigger = styled(RadixTooltip2.Trigger, {});
+function TooltipTrigger(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime18.jsx)(RadixTooltip2.Trigger, { asChild: true, children: props.children });
+}
+
+// src/components/overlay/tooltip/index.tsx
+var import_jsx_runtime19 = __toESM(require_jsx_runtime());
+var StyledTooltip = styled(RadixTooltip3.Root, {});
+function Tooltip(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(RadixTooltip3.Provider, { children: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(StyledTooltip, { children: props.children }) });
+}
 export {
   Alert,
   AlertTitle,
@@ -4005,7 +4049,10 @@ export {
   StyledBreadcrumbItem,
   Table,
   Text,
-  TextField
+  TextField,
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger
 };
 /**
  * @license React

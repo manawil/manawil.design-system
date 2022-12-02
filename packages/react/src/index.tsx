@@ -21,3 +21,4 @@ export * from './components/typography/heading'
 export * from './components/typography/text'
 
 export * from './components/overlay/dropdown'
+export * from './components/overlay/tooltip'
