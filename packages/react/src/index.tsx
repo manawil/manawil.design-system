@@ -22,3 +22,4 @@ export * from './components/typography/text'
 
 export * from './components/overlay/dropdown'
 export * from './components/overlay/tooltip'
+export * from './components/overlay/modal'

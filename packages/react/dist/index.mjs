@@ -3036,11 +3036,11 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx20 = jsxWithValidationDynamic;
-        var jsxs8 = jsxWithValidationStatic;
+        var jsx25 = jsxWithValidationDynamic;
+        var jsxs9 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx20;
-        exports.jsxs = jsxs8;
+        exports.jsx = jsx25;
+        exports.jsxs = jsxs9;
       })();
     }
   }
@@ -4013,6 +4013,97 @@ var StyledTooltip = styled(RadixTooltip3.Root, {});
 function Tooltip(props) {
   return /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(RadixTooltip3.Provider, { children: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(StyledTooltip, { children: props.children }) });
 }
+
+// src/components/overlay/modal/index.tsx
+import * as Dialog5 from "@radix-ui/react-dialog";
+
+// src/components/overlay/modal/content.tsx
+import { X } from "phosphor-react";
+import * as Dialog from "@radix-ui/react-dialog";
+var import_jsx_runtime20 = __toESM(require_jsx_runtime());
+var StyledOverlay = styled(Dialog.Overlay, {
+  backgroundColor: "rgba(0, 0, 0, 0.65)",
+  position: "fixed",
+  inset: 0,
+  animation: "overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1)"
+});
+var StyledContent3 = styled(Dialog.Content, {
+  backgroundColor: "white",
+  borderRadius: "6px",
+  boxShadow: "hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px",
+  position: "fixed",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "90vw",
+  maxWidth: "450px",
+  maxHeight: "85vh",
+  padding: "25px",
+  animation: "contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1)",
+  "&:focus": {
+    outline: "none"
+  }
+});
+var StyledCloseButton = styled(Dialog.Close, {
+  padding: "0.5rem",
+  border: "1px solid black",
+  background: "$gray-50",
+  position: "absolute",
+  top: "-15%",
+  right: "-3%",
+  cursor: "pointer",
+  transition: "background-color 0.2s"
+});
+function ModalContent(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)(Dialog.Portal, { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(StyledOverlay, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)(StyledContent3, __spreadProps(__spreadValues({}, props), { children: [
+      props.children,
+      /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(StyledCloseButton, { asChild: true, children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("button", { className: "IconButton", "aria-label": "Close", children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(X, { size: 24, color: "#000" }) }) })
+    ] }))
+  ] });
+}
+
+// src/components/overlay/modal/description.tsx
+import * as Dialog2 from "@radix-ui/react-dialog";
+var import_jsx_runtime21 = __toESM(require_jsx_runtime());
+var StyledDescription = styled(Dialog2.Description, {
+  margin: "10px 0 20px",
+  color: "gray",
+  fontSize: 16,
+  lineHeight: 1.5
+});
+function ModalDescription(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(StyledDescription, __spreadProps(__spreadValues({}, props), { children: props.children }));
+}
+
+// src/components/overlay/modal/title.tsx
+import * as Dialog3 from "@radix-ui/react-dialog";
+var import_jsx_runtime22 = __toESM(require_jsx_runtime());
+var StyledTitle = styled(Dialog3.Title, {
+  margin: 0,
+  fontWeight: 500,
+  color: "black",
+  fontSize: 17
+});
+function ModalTitle(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(StyledTitle, __spreadProps(__spreadValues({}, props), { children: props.children }));
+}
+
+// src/components/overlay/modal/trigger.tsx
+import * as Dialog4 from "@radix-ui/react-dialog";
+var import_jsx_runtime23 = __toESM(require_jsx_runtime());
+var StyledTrigger2 = styled(Dialog4.Trigger, {});
+function ModalTrigger(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(StyledTrigger2, { asChild: true, children: props.children });
+}
+
+// src/components/overlay/modal/index.tsx
+var import_jsx_runtime24 = __toESM(require_jsx_runtime());
+var StyledModal = styled(Dialog5.Root, {});
+function Modal(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime24.jsx)(Dialog5.Root, __spreadProps(__spreadValues({}, props), { children: props.children }));
+}
 export {
   Alert,
   AlertTitle,
@@ -4039,6 +4130,11 @@ export {
   Input,
   InputContainer,
   InputContent,
+  Modal,
+  ModalContent,
+  ModalDescription,
+  ModalTitle,
+  ModalTrigger,
   Multistep,
   RadioButton,
   RadioButtonContainer,
