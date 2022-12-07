@@ -3416,7 +3416,7 @@ var Input = styled("input", {
   height: spacing[12],
   padding: "0 $4",
   fontFamily: "$default",
-  fontSize: "$md",
+  fontSize: "$sm",
   color: "$gray-700",
   backgroundColor: "$gray-100",
   borderWidth: "$mid",
@@ -3424,6 +3424,11 @@ var Input = styled("input", {
   borderColor: "$gray-100",
   borderRadius: "$rounded-xs",
   transition: "border-color 0.2s",
+  "&:hover": {
+    borderWidth: "$mid",
+    borderStyle: "solid",
+    borderColor: "$gray-700"
+  },
   "&:focus": {
     borderWidth: "$mid",
     borderStyle: "solid",
