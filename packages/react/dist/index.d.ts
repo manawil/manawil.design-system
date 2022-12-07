@@ -9,7 +9,7 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import * as RadixTooltip from '@radix-ui/react-tooltip';
 import * as Dialog from '@radix-ui/react-dialog';
 
-declare const Button: _stitches_react_types_styled_component.StyledComponent<"button", {
+declare const StyledButton: _stitches_react_types_styled_component.StyledComponent<"button", {
     variant?: "outline" | "primary" | "secondary" | "danger" | "ghost" | undefined;
 }, {
     web: "(max-width: 1280px)";
@@ -240,10 +240,12 @@ declare const Button: _stitches_react_types_styled_component.StyledComponent<"bu
     transition: "transitions";
     zIndex: "zIndices";
 }, {}>>;
-interface ButtonProps extends ComponentProps<typeof Button> {
+interface ButtonProps extends ComponentProps<typeof StyledButton> {
     variant: 'primary' | 'secondary' | 'outline' | 'danger' | 'ghost';
+    loading?: boolean;
     children: ReactNode;
 }
+declare function Button({ variant, loading, children }: ButtonProps): JSX.Element;
 
 declare const CheckboxContainer: _stitches_react_types_styled_component.StyledComponent<react.ForwardRefExoticComponent<RadixCheckbox.CheckboxProps & react.RefAttributes<HTMLButtonElement>>, {}, {
     web: "(max-width: 1280px)";

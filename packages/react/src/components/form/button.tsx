@@ -1,8 +1,18 @@
 import { ComponentProps, ReactNode } from 'react'
+import { CircleNotch } from 'phosphor-react'
 
-import { styled } from '../../styles'
+import { keyframes, styled } from '../../styles'
 
-export const Button = styled('button', {
+const spin = keyframes({
+  from: {
+    transform: 'rotate(0deg)',
+  },
+  to: {
+    transform: 'rotate(360deg)',
+  },
+})
+
+const StyledButton = styled('button', {
   all: 'unset',
   borderRadius: '$rounded-xs',
   fontSize: '$sm',
@@ -24,6 +34,8 @@ export const Button = styled('button', {
   svg: {
     width: '$4',
     height: '$4',
+    animation: `${spin} 1s linear infinite`,
+    transition: 'all 0.2s',
   },
 
   '&:disabled': {
@@ -84,9 +96,20 @@ export const Button = styled('button', {
   },
 })
 
-export interface ButtonProps extends ComponentProps<typeof Button> {
+export interface ButtonProps extends ComponentProps<typeof StyledButton> {
   variant: 'primary' | 'secondary' | 'outline' | 'danger' | 'ghost'
+  loading?: boolean
   children: ReactNode
 }
 
-Button.displayName = 'Button'
+export function Button({ variant, loading, children }: ButtonProps) {
+  if (loading) {
+    return (
+      <StyledButton variant={variant} disabled={loading}>
+        <CircleNotch size={20} color="#fff" />
+      </StyledButton>
+    )
+  }
+
+  return <StyledButton variant={variant}>{children}</StyledButton>
+}

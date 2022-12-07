@@ -15,6 +15,10 @@ export default {
         type: 'inline-radio',
       },
     },
+    loading: {
+      control: 'boolean',
+      defaultValue: false,
+    },
     disabled: {
       control: 'boolean',
       defaultValue: false,
