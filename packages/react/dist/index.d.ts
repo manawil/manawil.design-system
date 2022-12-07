@@ -6553,7 +6553,7 @@ declare const StyledTrigger$1: _stitches_react_types_styled_component.StyledComp
 type DropdownTriggerProps = ComponentProps<typeof StyledTrigger$1>;
 declare function DropdownTrigger(props: DropdownTriggerProps): JSX.Element;
 
-declare const StyledDropdown: _stitches_react_types_styled_component.StyledComponent<react.ForwardRefExoticComponent<DropdownMenu.DropdownMenuItemProps & react.RefAttributes<HTMLDivElement>>, {}, {
+declare const StyledDropdown: _stitches_react_types_styled_component.StyledComponent<react.FC<DropdownMenu.DropdownMenuProps>, {}, {
     web: "(max-width: 1280px)";
     medium: "(max-width: 992px)";
     mobile: "(max-width: 768px)";

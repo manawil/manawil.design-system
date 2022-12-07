@@ -3535,7 +3535,7 @@ var AvatarContainer = styled(RadixAvatar.Root, {
   display: "inline-block",
   overflow: "hidden",
   fontFamily: "$default",
-  fontWeight: "$medium",
+  fontWeight: "$regular",
   userSelect: "none",
   variants: {
     size: {
