@@ -3463,7 +3463,6 @@ function TextField(_a) {
     "onIconClick",
     "error"
   ]);
-  console.log(error);
   return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(InputContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(InputContent, { children: [
     /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Input, __spreadValues({ hasIcon: Boolean(icon), hasError: Boolean(error) }, rest)),
     /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { role: onIconClick ? "button" : "", children: icon })

@@ -88,7 +88,6 @@ export function TextField({
   error,
   ...rest
 }: TextFieldProps) {
-  console.log(error)
   return (
     <InputContainer>
       <InputContent>
