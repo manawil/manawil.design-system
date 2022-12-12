@@ -1,6 +1,5 @@
 {
   "name": "@manawil-ui/eslint-config",
-  "version": "1.1.0",
   "private": true,
   "license": "ISC",
   "main": "index.js",
