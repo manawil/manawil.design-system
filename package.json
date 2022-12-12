@@ -9,8 +9,5 @@
   },
   "devDependencies": {
     "turbo": "^1.6.3"
-  },
-  "dependencies": {
-    "@manawil-ui/react": "^2.0.0"
   }
 }
