@@ -1,0 +1,2 @@
+import{S as e,B as r}from"./index.e6df9d3c.js";import{j as o}from"./jsx-runtime.818b5efb.js";import"./index.46589b03.js";import"./iframe.4e141b8d.js";const d={title:"Feedback/Skeleton",component:e,args:{width:"100%",height:"8px",radius:"999px"},decorators:[t=>o(r,{css:{width:"100%",maxWidth:"480px",height:"100%",overflow:"hidden",display:"flex",alignItems:"center",justifyContent:"center"},children:t()})]},m={},p=["Primary"];export{m as Primary,p as __namedExportsOrder,d as default};
+//# sourceMappingURL=Skeleton.stories.f4c8f965.js.map

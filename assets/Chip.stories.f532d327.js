@@ -1,0 +1,2 @@
+import{C as t}from"./index.e6df9d3c.js";import"./jsx-runtime.818b5efb.js";import"./iframe.4e141b8d.js";import"./index.46589b03.js";const s={title:"Data Display/Chip",component:t,args:{children:"Label"}},a={},n={args:{onDelete:()=>console.log("hey")}},p=["Primary","WithOnDelete"];export{a as Primary,n as WithOnDelete,p as __namedExportsOrder,s as default};
+//# sourceMappingURL=Chip.stories.f532d327.js.map
